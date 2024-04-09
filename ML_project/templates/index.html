@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Account Authenticity Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Account Authenticity Checker</h1>
+        <form id="instagramForm">
+            <label for="userFollowerCount">Follower Count:</label>
+            <input type="number" id="userFollowerCount" required><br>
+            
+            <label for="userFollowingCount">Following Count:</label>
+            <input type="number" id="userFollowingCount" required><br>
+            
+            <label for="userBiographyLength">Biography Length:</label>
+            <input type="number" id="userBiographyLength" required><br>
+            
+            <label for="userMediaCount">Media Count:</label>
+            <input type="number" id="userMediaCount" required><br>
+            
+            <label for="userHasProfilPic">Has Profile Picture:</label>
+            <select id="userHasProfilPic" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br>
+            
+            <label for="userIsPrivate">Is Private:</label>
+            <select id="userIsPrivate" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br>
+            
+            <label for="usernameDigitCount">Username Digit Count:</label>
+            <input type="number" id="usernameDigitCount" required><br>
+            
+            <label for="usernameLength">Username Length:</label>
+            <input type="number" id="usernameLength" required><br>
+            
+
+            
+            <button type="submit">Check Authenticity</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
