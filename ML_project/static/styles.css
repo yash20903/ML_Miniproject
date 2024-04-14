@@ -1,10 +1,20 @@
+html, body {
+    height: 100%; /* Ensure the full height is used */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: url('image.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Cover the entire page */
+}
+
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    width: 100%; /* Container uses full screen width */
+    max-width: 400px; /* But will not exceed 400px */
+    margin: 50px auto; /* Centered with 50px margin from top */
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Light background with reduced opacity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-radius: 10px; /* Softened border radius for a modern look */
 }
 
 input[type="number"],
@@ -13,6 +23,9 @@ select {
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    border: 1px solid #ddd; /* Subtle border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for better readability */
 }
 
 button {
@@ -22,6 +35,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
